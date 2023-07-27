@@ -8,11 +8,11 @@
 
     /* Disable content selection for the entire page */
 body {
-  -webkit-touch-callout: none; /* Disable callout on iOS */
-  -webkit-user-select: none; /* Disable selection on iOS */
-  -moz-user-select: none; /* Disable selection on older versions of Firefox */
-  -ms-user-select: none; /* Disable selection on older versions of Internet Explorer/Edge */
-  user-select: none; /* Disable selection on modern browsers */
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
 }
 
     canvas#full {
@@ -327,16 +327,25 @@ body {
 
 
     @media screen and (min-width: 769px) and (max-width: 799px)  {
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: black; */
+        font-family: "Poppins", sans-serif;
+      }
+
       canvas#full {
+        display: none;
+      }
+      canvas#mobile {
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
-      }
-      canvas#mobile {
-        display: none;
       }
 
       /* ---------------------------------------------------Page_1----------------------------------------------------------------- */
@@ -558,16 +567,25 @@ body {
     }
 
     @media screen and (min-width: 800px) and (max-width: 899px)  {
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: black; */
+        font-family: "Poppins", sans-serif;
+      }
+
       canvas#full {
+        display: none;
+      }
+      canvas#mobile {
+        display: block;
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
-      }
-      canvas#mobile {
-        display: none;
       }
 
       /* ---------------------------------------------------Page_1----------------------------------------------------------------- */
@@ -672,17 +690,17 @@ body {
       font-family: "Poppins", sans-serif;
       bottom: 0%;
       color: #ffff;
-      left: 25%;
+      left: 6%;
       gap: 2rem;
     }
     
     .aboutBioHead {
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 600;
     }
     
     .aboutBioSubHead {
-      font-size: 0.6rem;
+      font-size: 1rem;
       font-weight: 400;
     }
     
@@ -770,7 +788,7 @@ body {
 
     .createImg{
       position: absolute;
-      top: 20%;
+      top: 30%;
       left: 13.5%;
     }
 
@@ -2652,7 +2670,305 @@ body {
     }
 
     /* Media query for responsiveness */
-    @media screen and (min-width: 300px)and (max-width: 768px) {
+   
+    @media screen and (min-width: 300px)and (max-width: 399px) {
+      /* -------------------------------------Animation-------------------------------------- */
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: black; */
+        font-family: "Poppins", sans-serif;
+      }
+
+      canvas#full {
+        display: none;
+      }
+      canvas#mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      /* -----------------------------------------Navbar---------------------------------------------- */
+      .left-side {
+        flex-direction: row;
+      }
+      .title {
+        margin-top: 0px;
+      }
+      .navbar-links {
+        flex-direction: row;
+        gap: 0.8rem;
+      }
+      .navbar-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+      .navbar-links li a{
+        font-size: 13px;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px;
+        color: white;
+      }
+      
+      /* -----------------------------------------Page__1---------------------------------------------- */
+
+      .homePage_1 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: #ffff;
+        margin-top: -30px;
+      }
+      
+      .downloadBtns {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        z-index: 1;
+      }
+      
+      .downloadBtn {
+        width: 200px;
+        height: auto;
+        margin: 0 20px;
+        cursor: pointer;
+      }
+
+      .bioHead {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      
+      .bioSubHead {
+        font-size: 15px;
+        padding: 10px;
+      }
+      
+      .downloadBtn {
+        width: 120px;
+      }
+      
+      /* -----------------------------------------Page__2---------------------------------------------- */
+      .homePage_2 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 10%;
+        color: #ffff;
+        margin-left: 20px;
+        margin-top: 100px;
+      }
+
+      .leafImg{
+        width: 50px;
+        height: 40px;
+      }
+      
+      .homePage_2_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        width: 100%;
+        margin-top: 150px;
+      }
+      
+      .creatorsBioHead {
+        font-size: 16px;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0px;
+      }
+      
+      .creatorsBioSubHead {
+        margin-top: 150px;
+        font-size: 12px;
+        font-weight: 400;
+        text-align: left;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      
+      .homePage_2_right {
+        position: absolute;
+        background-color: aliceblue;
+        border-radius: 10px;
+        width: 200px;
+        height: 120px;
+        left: 10%;
+        top: 48%;
+        margin: 0;
+      }
+      
+      /* -----------------------------------------Page__3---------------------------------------------- */
+      .homePage_3 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 0%;
+        left: 2%;
+        gap: 2rem;
+      }
+      
+      .aboutBioHead {
+        font-size: 2.1rem;
+        font-weight: 800;
+      }
+      
+      .aboutBioSubHead {
+        font-size: 0.6rem;
+        font-weight: 400;
+        padding: 10px;
+      }
+      
+      /* -----------------------------------------Page__4---------------------------------------------- */
+      .homePage_4 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 1%;
+        left: 5%;
+      }
+      
+      .homePage_4 img {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .homePage_4 p {
+        font-size: 9px;
+      }
+      .homePage_4 h2 {
+        font-size: 15px;
+      }
+      .homePage_4 h1 {
+        position: absolute;
+        font-size: 20px;
+        left: 30%;
+        top: 50%;
+      }
+      
+      .features_left1 {
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 50px;
+        padding-right: 20px;
+      }
+      .features_left2 {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+      .features_right1 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 50px;
+        padding-right: 50px;
+        height: 40%;
+      }
+      .features_right2 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 50px;
+      }
+      
+      /* -----------------------------------------Page__5---------------------------------------------- */
+      .homePage_5{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        width: 100%;
+        top: 4%;
+        left: -1%;
+      }
+      
+      .homePage_5 img{
+        width: 150px;
+        height: 300px;
+      }
+      
+      .homeImg{
+        position: absolute;
+        top: 3%;
+        left: 1%;
+      }
+      .createImg{
+        position: absolute;
+        top: 3%;
+        left: 27%;
+      }
+      .tunesImg{
+        position: absolute;
+        top: 3%;
+        left: 52%;
+      }
+      
+      .homePage_5_right{
+        margin-left: -1px;
+        margin-top: 100%;
+        padding: 10px;
+      }
+      
+      .homePage_5_right h1 {
+        font-size: 25px;
+        font-weight: 800;
+      }
+      
+      .homePage_5_right p{          
+        font-size: 12px;
+      } 
+
+    }
+
+    @media screen and (min-width: 400px)and (max-width: 449px) {
       /* -------------------------------------Animation-------------------------------------- */
       * {
         margin: 0;
@@ -2690,7 +3006,304 @@ body {
         margin-bottom: 10px;
       }
       .navbar-links li a{
+        font-size: 15px;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px;
+        color: white;
+      }
+      
+      /* -----------------------------------------Page__1---------------------------------------------- */
+
+      .homePage_1 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: #ffff;
+        margin-top: -30px;
+      }
+      
+      .downloadBtns {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        z-index: 1;
+      }
+      
+      .downloadBtn {
+        width: 200px;
+        height: auto;
+        margin: 0 20px;
+        cursor: pointer;
+      }
+
+      .bioHead {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      
+      .bioSubHead {
+        font-size: 15px;
+        padding: 10px;
+      }
+      
+      .downloadBtn {
+        width: 130px;
+      }
+      
+      /* -----------------------------------------Page__2---------------------------------------------- */
+      .homePage_2 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 10%;
+        color: #ffff;
+        margin-left: 20px;
+        margin-top: 100px;
+      }
+
+      .leafImg{
+        width: 50px;
+        height: 40px;
+      }
+      
+      .homePage_2_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        width: 100%;
+        margin-top: 150px;
+      }
+      
+      .creatorsBioHead {
+        font-size: 22px;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0px;
+      }
+      
+      .creatorsBioSubHead {
+        margin-top: 200px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      
+      .homePage_2_right {
+        position: absolute;
+        background-color: aliceblue;
+        border-radius: 10px;
+        width: 250px;
+        height: 150px;
+        left: 10%;
+        top: 45%;
+        margin: 0;
+      }
+      
+      /* -----------------------------------------Page__3---------------------------------------------- */
+      .homePage_3 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 0%;
+        left: 2%;
+        gap: 2rem;
+      }
+      
+      .aboutBioHead {
+        font-size: 2.1rem;
+        font-weight: 800;
+      }
+      
+      .aboutBioSubHead {
+        font-size: 0.6rem;
+        font-weight: 400;
+        padding: 10px;
+      }
+      
+      /* -----------------------------------------Page__4---------------------------------------------- */
+      .homePage_4 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 1%;
+        left: 5%;
+      }
+      
+      .homePage_4 img {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .homePage_4 p {
+        font-size: 9px;
+      }
+      .homePage_4 h2 {
+        font-size: 15px;
+      }
+      .homePage_4 h1 {
+        position: absolute;
         font-size: 20px;
+        left: 30%;
+        top: 50%;
+      }
+      
+      .features_left1 {
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 50px;
+        padding-right: 20px;
+      }
+      .features_left2 {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+      .features_right1 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 50px;
+        padding-right: 50px;
+        height: 40%;
+      }
+      .features_right2 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 50px;
+      }
+      
+      /* -----------------------------------------Page__5---------------------------------------------- */
+      .homePage_5{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        width: 100%;
+        top: 4%;
+        left: -1%;
+      }
+      
+      .homePage_5 img{
+        width: 180px;
+        height: 400px;
+      }
+      
+      .homeImg{
+        position: absolute;
+        top: 3%;
+        left: 1%;
+      }
+      .createImg{
+        position: absolute;
+        top: 3%;
+        left: 27%;
+      }
+      .tunesImg{
+        position: absolute;
+        top: 3%;
+        left: 52%;
+      }
+      
+      .homePage_5_right{
+        margin-left: -1px;
+        margin-top: 120%;
+        padding: 10px;
+      }
+      
+      .homePage_5_right h1 {
+        font-size: 25px;
+        font-weight: 800;
+      }
+      
+      .homePage_5_right p{          
+        font-size: 12px;
+      } 
+
+    }
+
+    @media screen and (min-width: 450px)and (max-width: 500px) {
+      /* -------------------------------------Animation-------------------------------------- */
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: black; */
+        font-family: "Poppins", sans-serif;
+      }
+
+      canvas#full {
+        display: none;
+      }
+      canvas#mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      /* -----------------------------------------Navbar---------------------------------------------- */
+      .left-side {
+        flex-direction: row;
+      }
+      .title {
+        margin-top: 0px;
+      }
+      .navbar-links {
+        flex-direction: row;
+        gap: 1rem;
+      }
+      .navbar-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+      .navbar-links li a{
+        font-size: 18px;
       }
       .navbar {
         display: flex;
@@ -2891,6 +3504,554 @@ body {
       .homePage_5 img{
         width: 220px;
         height: 500px;
+      }
+      
+      .homeImg{
+        position: absolute;
+        top: 3%;
+        left: 1%;
+      }
+      .createImg{
+        position: absolute;
+        top: 3%;
+        left: 27%;
+      }
+      .tunesImg{
+        position: absolute;
+        top: 3%;
+        left: 52%;
+      }
+      
+      .homePage_5_right{
+        margin-left: -1px;
+        margin-top: 120%;
+        padding: 10px;
+      }
+      
+      .homePage_5_right h1 {
+        font-size: 25px;
+        font-weight: 800;
+      }
+      
+      .homePage_5_right p{          
+        font-size: 12px;
+      } 
+
+    }
+
+    @media screen and (min-width: 510px)and (max-width: 599px) {
+      /* -------------------------------------Animation-------------------------------------- */
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: black; */
+        font-family: "Poppins", sans-serif;
+      }
+
+      canvas#full {
+        display: none;
+      }
+      canvas#mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      /* -----------------------------------------Navbar---------------------------------------------- */
+      .left-side {
+        flex-direction: row;
+      }
+      .title {
+        margin-top: 0px;
+      }
+      .navbar-links {
+        flex-direction: row;
+        gap: 1.1rem;
+      }
+      .navbar-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+      .navbar-links li a{
+        font-size: 20px;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px;
+        color: white;
+      }
+      
+      /* -----------------------------------------Page__1---------------------------------------------- */
+      .bioHead {
+        font-size: 32px;
+        font-weight: 600;
+      }
+      
+      .bioSubHead {
+        font-size: 18px;
+        padding: 10px;
+      }
+      
+      .downloadBtn {
+        width: 150px;
+      }
+      
+      /* -----------------------------------------Page__2---------------------------------------------- */
+      .homePage_2 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 10%;
+        color: #ffff;
+        margin-left: 20px;
+        margin-top: 50px;
+      }
+
+      .leafImg{
+        width: 55px;
+        height: 45px;
+      }
+      
+      .homePage_2_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        width: 100%;
+        margin-top: 200px;
+      }
+      
+      .creatorsBioHead {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0px;
+      }
+      
+      .creatorsBioSubHead {
+        margin-top: 320px;
+        font-size: 15px;
+        font-weight: 400;
+        text-align: left;
+        margin-right: 0px;
+        margin-left: 10px;
+      }
+      
+      .homePage_2_right {
+        position: absolute;
+        background-color: aliceblue;
+        border-radius: 10px;
+        width: 350px;
+        height: 250px;
+        left: 10%;
+        top: 48%;
+        margin: 0;
+      }
+      
+      /* -----------------------------------------Page__3---------------------------------------------- */
+      .homePage_3 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 0%;
+        left: 2%;
+        gap: 2rem;
+      }
+      
+      .aboutBioHead {
+        font-size: 2.5rem;
+        font-weight: 800;
+      }
+      
+      .aboutBioSubHead {
+        font-size: 0.7rem;
+        font-weight: 400;
+        padding: 0px;
+      }
+      
+      /* -----------------------------------------Page__4---------------------------------------------- */
+      .homePage_4 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 1%;
+        left: 10%;
+      }
+      
+      .homePage_4 img {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .homePage_4 p {
+        font-size: 9px;
+      }
+      .homePage_4 h2 {
+        font-size: 15px;
+      }
+      .homePage_4 h1 {
+        position: absolute;
+        font-size: 30px;
+        left: 30%;
+        top: 50%;
+      }
+      
+      .features_left1 {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 250px;
+        padding-right: 20px;
+      }
+      .features_left2 {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+      .features_right1 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 250px;
+        padding-right: 50px;
+        height: 40%;
+      }
+      .features_right2 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 50px;
+      }
+      
+      /* -----------------------------------------Page__5---------------------------------------------- */
+      .homePage_5{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        width: 100%;
+        top: 4%;
+        left: -1%;
+      }
+      
+      .homePage_5 img{
+        width: 220px;
+        height: 500px;
+      }
+      
+      .homeImg{
+        position: absolute;
+        top: 3%;
+        left: 1%;
+      }
+      .createImg{
+        position: absolute;
+        top: 3%;
+        left: 27%;
+      }
+      .tunesImg{
+        position: absolute;
+        top: 3%;
+        left: 52%;
+      }
+      
+      .homePage_5_right{
+        margin-left: -1px;
+        margin-top: 120%;
+        padding: 10px;
+      }
+      
+      .homePage_5_right h1 {
+        font-size: 25px;
+        font-weight: 800;
+      }
+      
+      .homePage_5_right p{          
+        font-size: 12px;
+      } 
+
+    }
+
+    @media screen and (min-width: 600px)and (max-width: 700px) {
+      /* -------------------------------------Animation-------------------------------------- */
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: black; */
+        font-family: "Poppins", sans-serif;
+      }
+
+      canvas#full {
+        display: none;
+      }
+      canvas#mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      /* -----------------------------------------Navbar---------------------------------------------- */
+      .left-side {
+        flex-direction: row;
+      }
+      .title {
+        margin-top: 0px;
+      }
+      .navbar-links {
+        flex-direction: row;
+        gap: 1.2rem;
+      }
+      .navbar-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+      .navbar-links li a{
+        font-size: 22px;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px;
+        color: white;
+      }
+      
+      /* -----------------------------------------Page__1---------------------------------------------- */
+      .bioHead {
+        font-size: 32px;
+        font-weight: 600;
+      }
+      
+      .bioSubHead {
+        font-size: 18px;
+        padding: 10px;
+      }
+      
+      .downloadBtn {
+        width: 150px;
+      }
+      
+      /* -----------------------------------------Page__2---------------------------------------------- */
+      .homePage_2 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 10%;
+        color: #ffff;
+        margin-left: 20px;
+        margin-top: 50px;
+      }
+
+      .leafImg{
+        width: 55px;
+        height: 45px;
+      }
+      
+      .homePage_2_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        width: 100%;
+        margin-top: 200px;
+      }
+      
+      .creatorsBioHead {
+        font-size: 32px;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0px;
+      }
+      
+      .creatorsBioSubHead {
+        margin-top: 320px;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: left;
+        margin-right: 0px;
+        margin-left: 10px;
+      }
+      
+      .homePage_2_right {
+        position: absolute;
+        background-color: aliceblue;
+        border-radius: 10px;
+        width: 400px;
+        height: 250px;
+        left: 10%;
+        top: 48%;
+        margin: 0;
+      }
+      
+      /* -----------------------------------------Page__3---------------------------------------------- */
+      .homePage_3 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 0%;
+        left: 2%;
+        gap: 2rem;
+      }
+      
+      .aboutBioHead {
+        font-size: 2.5rem;
+        font-weight: 800;
+      }
+      
+      .aboutBioSubHead {
+        font-size: 0.7rem;
+        font-weight: 400;
+        padding: 0px;
+      }
+      
+      /* -----------------------------------------Page__4---------------------------------------------- */
+      .homePage_4 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 1%;
+        left: 10%;
+      }
+      
+      .homePage_4 img {
+        width: 40px;
+        height: 40px;
+      }
+      
+      .homePage_4 p {
+        font-size: 9px;
+      }
+      .homePage_4 h2 {
+        font-size: 15px;
+      }
+      .homePage_4 h1 {
+        position: absolute;
+        font-size: 30px;
+        left: 30%;
+        top: 50%;
+      }
+      
+      .features_left1 {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 250px;
+        padding-right: 20px;
+      }
+      .features_left2 {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+      .features_right1 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 250px;
+        padding-right: 50px;
+        height: 40%;
+      }
+      .features_right2 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 50px;
+      }
+      
+      /* -----------------------------------------Page__5---------------------------------------------- */
+      .homePage_5{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        width: 100%;
+        top: 4%;
+        left: -1%;
+      }
+      
+      .homePage_5 img{
+        width: 250px;
+        height: 520px;
       }
       
       .homeImg{
