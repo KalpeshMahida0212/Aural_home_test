@@ -1,3 +1,28 @@
+// Function to check if the device is a computer or laptop
+function isComputerOrLaptop() {
+  return window.innerWidth >= 1024; // You can adjust the width as needed
+}
+
+// Function to show the alert message
+function showDesktopAlert() {
+  alert("Use Arrow Keys For smooth Navigation");
+}
+
+// Check on page load and show the alert if it's a computer or laptop
+window.addEventListener('load', function() {
+  if (isComputerOrLaptop()) {
+    showDesktopAlert();
+  }
+});
+
+function redirectToGooglePlay() {
+  window.location.href = "https://play.google.com/store/apps/details?id=com.aural.settings_aural&hl=en_IN&gl=US";
+}
+
+function redirectToAppleStore() {
+  window.location.href = "https://apps.apple.com/in/app/aural/id1663503315";
+}
+
 var can = document.getElementById("full");
 function resizeCanvas() {
   can.style.width = window.innerWidth + "px";
