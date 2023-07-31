@@ -8,11 +8,11 @@
 
     /* Disable content selection for the entire page */
 body {
-  -webkit-touch-callout: none; 
-  -webkit-user-select: none; 
-  -moz-user-select: none; 
-  -ms-user-select: none; 
-  user-select: none; 
+  -webkit-touch-callout: none; /* Disable callout on iOS */
+  -webkit-user-select: none; /* Disable selection on iOS */
+  -moz-user-select: none; /* Disable selection on older versions of Firefox */
+  -ms-user-select: none; /* Disable selection on older versions of Internet Explorer/Edge */
+  user-select: none; /* Disable selection on modern browsers */
 }
 
     canvas#full {
@@ -291,12 +291,12 @@ body {
 
     .homePage_5 img{
       width: 400px;
-      height: 800px;
+      height: 600px;
     }
 
     .createImg{
       position: absolute;
-      top: 7%;
+      top: 20%;
       left: 13%;
     }
 
@@ -535,20 +535,20 @@ body {
       font-family: "Poppins", sans-serif;
       bottom: 0%;
       color: #ffff;
-      margin-left: 80px;
+      margin-left: 30px;
       top: -4%;
       left: -5%;
     }
 
     .homePage_5 img{
-      width: 200px;
-      height: 500px;
+      width: 230px;
+      height: 380px;
     }
 
     .createImg{
       position: absolute;
-      top: 20%;
-      left: 13.5%;
+      top: 26%;
+      left: 14%;
     }
 
     .homePage_5_right{
@@ -782,13 +782,13 @@ body {
     }
 
     .homePage_5 img{
-      width: 200px;
-      height: 500px;
+      width: 230px;
+      height: 400px;
     }
 
     .createImg{
       position: absolute;
-      top: 30%;
+      top: 25%;
       left: 13.5%;
     }
 
@@ -1014,13 +1014,13 @@ body {
     }
 
     .homePage_5 img{
-      width: 200px;
-      height: 500px;
+      width: 230px;
+      height: 400px;
     }
 
     .createImg{
       position: absolute;
-      top: 19%;
+      top: 25%;
       left: 13.5%;
     }
 
@@ -1247,12 +1247,12 @@ body {
 
     .homePage_5 img{
       width: 250px;
-      height: 550px;
+      height: 450px;
     }
 
     .createImg{
       position: absolute;
-      top: 16%;
+      top: 22%;
       left: 14%;
     }
 
@@ -1480,12 +1480,12 @@ body {
 
     .homePage_5 img{
       width: 250px;
-      height: 550px;
+      height: 450px;
     }
 
     .createImg{
       position: absolute;
-      top: 16%;
+      top: 22%;
       left: 12%;
     }
 
@@ -1713,12 +1713,12 @@ body {
 
     .homePage_5 img{
       width: 300px;
-      height: 600px;
+      height: 500px;
     }
 
     .createImg{
       position: absolute;
-      top: 14%;
+      top: 19%;
       left: 13%;
     }
 
@@ -1946,12 +1946,12 @@ body {
 
     .homePage_5 img{
       width: 300px;
-      height: 600px;
+      height: 500px;
     }
 
     .createImg{
       position: absolute;
-      top: 14%;
+      top: 19%;
       left: 12.5%;
     }
 
@@ -2179,12 +2179,12 @@ body {
 
     .homePage_5 img{
       width: 300px;
-      height: 600px;
+      height: 500px;
     }
 
     .createImg{
       position: absolute;
-      top: 14%;
+      top: 19%;
       left: 12%;
     }
 
@@ -2405,19 +2405,19 @@ body {
       font-family: "Poppins", sans-serif;
       bottom: 0%;
       color: #ffff;
-      margin-left: 80px;
+      margin-left: 70px;
       top: -4%;
       left: 1%;
     }
 
     .homePage_5 img{
-      width: 300px;
-      height: 600px;
+      width: 330px;
+      height: 500px;
     }
 
     .createImg{
       position: absolute;
-      top: 14%;
+      top: 19%;
       left: 11.5%;
     }
 
@@ -2644,13 +2644,13 @@ body {
     }
 
     .homePage_5 img{
-      width: 300px;
-      height: 600px;
+      width: 330px;
+      height: 500px;
     }
 
     .createImg{
       position: absolute;
-      top: 14%;
+      top: 19%;
       left: 11.5%;
     }
 
@@ -2670,8 +2670,8 @@ body {
     }
 
     /* Media query for responsiveness */
-   
-    @media screen and (min-width: 300px)and (max-width: 399px) {
+
+    @media screen and (min-width: 300px)and (max-width: 320px) {
       /* -------------------------------------Animation-------------------------------------- */
       * {
         margin: 0;
@@ -2832,18 +2832,22 @@ body {
         margin-left: 10px;
         top: 0%;
         left: 2%;
-        gap: 2rem;
+        gap: 1rem;
       }
       
       .aboutBioHead {
-        font-size: 2.1rem;
+        font-size: 1rem;
         font-weight: 800;
+        padding-left: 50px;
+        padding-right: 50px;
       }
       
       .aboutBioSubHead {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
         font-weight: 400;
-        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 0px;
       }
       
       /* -----------------------------------------Page__4---------------------------------------------- */
@@ -2926,13 +2930,13 @@ body {
         color: #ffff;
         margin-left: 10px;
         width: 100%;
-        top: 4%;
+        top: 20%;
         left: -1%;
       }
       
       .homePage_5 img{
         width: 150px;
-        height: 300px;
+        height: 200px;
       }
       
       .homeImg{
@@ -2953,7 +2957,306 @@ body {
       
       .homePage_5_right{
         margin-left: -1px;
-        margin-top: 100%;
+        margin-top: 80%;
+        padding: 10px;
+      }
+      
+      .homePage_5_right h1 {
+        font-size: 25px;
+        font-weight: 800;
+      }
+      
+      .homePage_5_right p{          
+        font-size: 12px;
+      } 
+
+    }
+   
+    @media screen and (min-width: 321px)and (max-width: 399px) {
+      /* -------------------------------------Animation-------------------------------------- */
+      * {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background-color: black; */
+        font-family: "Poppins", sans-serif;
+      }
+
+      canvas#full {
+        display: none;
+      }
+      canvas#mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      /* -----------------------------------------Navbar---------------------------------------------- */
+      .left-side {
+        flex-direction: row;
+      }
+      .title {
+        margin-top: 0px;
+      }
+      .navbar-links {
+        flex-direction: row;
+        gap: 0.8rem;
+      }
+      .navbar-links li {
+        margin-left: 0;
+        margin-bottom: 10px;
+      }
+      .navbar-links li a{
+        font-size: 13px;
+      }
+      .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: transparent;
+        padding: 10px;
+        color: white;
+      }
+      
+      /* -----------------------------------------Page__1---------------------------------------------- */
+
+      .homePage_1 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        color: #ffff;
+        margin-top: -30px;
+      }
+      
+      .downloadBtns {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        z-index: 1;
+      }
+      
+      .downloadBtn {
+        width: 200px;
+        height: auto;
+        margin: 0 20px;
+        cursor: pointer;
+      }
+
+      .bioHead {
+        font-size: 30px;
+        font-weight: 600;
+      }
+      
+      .bioSubHead {
+        font-size: 15px;
+        padding: 10px;
+      }
+      
+      .downloadBtn {
+        width: 120px;
+      }
+      
+      /* -----------------------------------------Page__2---------------------------------------------- */
+      .homePage_2 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 10%;
+        color: #ffff;
+        margin-left: 20px;
+        margin-top: 120px;
+      }
+
+      .leafImg{
+        width: 50px;
+        height: 40px;
+      }
+      
+      .homePage_2_left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        width: 100%;
+        margin-top: 180px;
+      }
+      
+      .creatorsBioHead {
+        font-size: 22px;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0px;
+      }
+      
+      .creatorsBioSubHead {
+        margin-top: 180px;
+        font-size: 13px;
+        font-weight: 400;
+        text-align: left;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      
+      .homePage_2_right {
+        position: absolute;
+        background-color: aliceblue;
+        border-radius: 10px;
+        width: 250px;
+        height: 120px;
+        left: 10%;
+        top: 51%;
+        margin: 0;
+      }
+      
+      /* -----------------------------------------Page__3---------------------------------------------- */
+      .homePage_3 {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 0%;
+        left: 2%;
+        gap: 1rem;
+      }
+      
+      .aboutBioHead {
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+      
+      .aboutBioSubHead {
+        font-size: 0.5rem;
+        font-weight: 400;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 10px;
+      }
+      
+      /* -----------------------------------------Page__4---------------------------------------------- */
+      .homePage_4 {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        top: 1%;
+        left: 5%;
+      }
+      
+      .homePage_4 img {
+        width: 30px;
+        height: 30px;
+      }
+      
+      .homePage_4 p {
+        font-size: 9px;
+      }
+      .homePage_4 h2 {
+        font-size: 15px;
+      }
+      .homePage_4 h1 {
+        position: absolute;
+        font-size: 20px;
+        left: 30%;
+        top: 50%;
+      }
+      
+      .features_left1 {
+        margin-right: 50px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 50px;
+        padding-right: 20px;
+      }
+      .features_left2 {
+        margin-right: 100px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+      }
+      .features_right1 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 50px;
+        padding-right: 50px;
+        height: 40%;
+      }
+      .features_right2 {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-right: 50px;
+      }
+      
+      /* -----------------------------------------Page__5---------------------------------------------- */
+      .homePage_5{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        font-style: normal;
+        font-family: "Poppins", sans-serif;
+        bottom: 0%;
+        color: #ffff;
+        margin-left: 10px;
+        width: 100%;
+        top: 20%;
+        left: -1%;
+      }
+      
+      .homePage_5 img{
+        width: 150px;
+        height: 200px;
+      }
+      
+      .homeImg{
+        position: absolute;
+        top: 3%;
+        left: 1%;
+      }
+      .createImg{
+        position: absolute;
+        top: 3%;
+        left: 27%;
+      }
+      .tunesImg{
+        position: absolute;
+        top: 3%;
+        left: 52%;
+      }
+      
+      .homePage_5_right{
+        margin-left: -1px;
+        margin-top: 80%;
         padding: 10px;
       }
       
@@ -3223,13 +3526,13 @@ body {
         color: #ffff;
         margin-left: 10px;
         width: 100%;
-        top: 4%;
+        top: 20%;
         left: -1%;
       }
       
       .homePage_5 img{
         width: 180px;
-        height: 400px;
+        height: 300px;
       }
       
       .homeImg{
@@ -3250,7 +3553,7 @@ body {
       
       .homePage_5_right{
         margin-left: -1px;
-        margin-top: 120%;
+        margin-top: 100%;
         padding: 10px;
       }
       
@@ -3407,8 +3710,9 @@ body {
       }
       
       .aboutBioHead {
-        font-size: 2.1rem;
+        font-size: 1.9rem;
         font-weight: 800;
+        padding: 10px;
       }
       
       .aboutBioSubHead {
@@ -3449,7 +3753,7 @@ body {
         position: absolute;
         font-size: 30px;
         left: 30%;
-        top: 45%;
+        top: 50%;
       }
       
       .features_left1 {
@@ -3497,13 +3801,13 @@ body {
         color: #ffff;
         margin-left: 10px;
         width: 100%;
-        top: 4%;
+        top: 20%;
         left: -1%;
       }
       
       .homePage_5 img{
         width: 220px;
-        height: 500px;
+        height: 350px;
       }
       
       .homeImg{
@@ -3524,7 +3828,7 @@ body {
       
       .homePage_5_right{
         margin-left: -1px;
-        margin-top: 120%;
+        margin-top: 80%;
         padding: 10px;
       }
       
@@ -3771,13 +4075,13 @@ body {
         color: #ffff;
         margin-left: 10px;
         width: 100%;
-        top: 4%;
+        top: 20%;
         left: -1%;
       }
       
       .homePage_5 img{
         width: 220px;
-        height: 500px;
+        height: 400px;
       }
       
       .homeImg{
@@ -3798,7 +4102,7 @@ body {
       
       .homePage_5_right{
         margin-left: -1px;
-        margin-top: 120%;
+        margin-top: 100%;
         padding: 10px;
       }
       
@@ -4045,7 +4349,7 @@ body {
         color: #ffff;
         margin-left: 10px;
         width: 100%;
-        top: 4%;
+        top: 20%;
         left: -1%;
       }
       
@@ -4072,7 +4376,7 @@ body {
       
       .homePage_5_right{
         margin-left: -1px;
-        margin-top: 120%;
+        margin-top: 100%;
         padding: 10px;
       }
       
